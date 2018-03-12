@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="#333030" >
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal|center"
+        android:text="の心情日志"
+        android:textColor="#ffffffff"
+        android:textSize="20dp" />
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/timg"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/returns"
+        android:layout_marginStart="26dp" />
+    <Button
+        android:id="@+id/returns"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:drawablePadding="6dp"
+        android:ellipsize="end"
+        android:paddingLeft="5dp"
+        android:text="返回"
+        android:layout_marginLeft="3dp"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:visibility="visible"
+        android:background="#00000000"/>
+
+</RelativeLayout>

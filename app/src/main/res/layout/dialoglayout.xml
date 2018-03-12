@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialoglayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/datouxiangbk"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@mipmap/touxiangbks" >
+        <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/datouxiang"/>
+        <TextView
+            android:id="@+id/manminds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/xin"
+            android:id="@+id/favourite"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/inputtexts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:layout_margin="20dp"
+        android:layout_below="@id/datouxiangbk"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/inputtexts"
+        android:background="#000000">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/timg"
+            android:id="@+id/justimg"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

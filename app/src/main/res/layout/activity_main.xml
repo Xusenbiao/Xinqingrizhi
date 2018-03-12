@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.diary.MainActivity"
+    >
+    <include layout="@layout/titlestyle" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <SearchView
+            android:id="@+id/mysearchView"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="true"
+            android:imeOptions="actionSearch">
+        </SearchView>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/firstaddmy"
+            android:src="@mipmap/add"
+            />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <view android:id="@+id/swipeRefreshLayout"
+            class="android.support.v4.widget.SwipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/recyclerview"
+                >
+            </android.support.v7.widget.RecyclerView>
+        </view>
+        <android.support.v7.widget.RecyclerView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/searchresult">
+        </android.support.v7.widget.RecyclerView>
+        <android.support.v7.widget.RecyclerView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/recyclerview2"
+            >
+        </android.support.v7.widget.RecyclerView>
+        <android.support.v7.widget.RecyclerView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/recyclerview3"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="还没有日志哦，点击右上角开启我的心情日志..."
+            android:lines="2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:id="@+id/firstaddtext"/>
+
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        app:menu="@menu/navigation" />
+
+</LinearLayout>
